@@ -1,0 +1,26 @@
+services:
+  apache:
+    build:
+      context: .
+      dockerfile: ./Docker/web-server-apache-php/Dockerfile
+    container_name: apache-web-server
+    volumes:
+      - ./licitacionesApp:/var/www/html
+    ports:
+      - "80:80"
+    working_dir: /var/www/html
+    depends_on:
+      - mysql
+  
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: licitaciones
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
+    
