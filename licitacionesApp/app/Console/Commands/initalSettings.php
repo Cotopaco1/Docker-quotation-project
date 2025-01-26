@@ -42,12 +42,6 @@ class initalSettings extends Command
         }else {
             $this->info('IVA already exists');
         }
-        
-
-        if(!Storage::disk('local')->exists('temp')){
-            Storage::disk('local')->makeDirectory('temp');  
-            $this->info('The temp directory has been created successfully');
-        }
 
         $name = $this->ask('Enter the name of the user');
         $email = $this->ask('Enter the email of the user');
