@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+p{
+    @apply text-base;
+
+}
+h1{
+    @apply text-3xl;
+}
+h2{
+    @apply text-2xl;
+}
+h3{
+    @apply text-xl;
+}
+h4{
+    @apply text-lg;
+}
+
+h1,h2,h3,h4{
+    @apply text-primary-1;
+}
+p{
+    @apply text-black-custom;
+}
+span{
+    @apply text-primary-1;
+}
+
+.svg-medium{
+    @apply cursor-pointer flex justify-center items-center;
+}
+.svg-medium img{
+    @apply w-[30px] h-[30px]
+}
+
+.truncate-text{
+    @apply truncate max-w-[200px];
+}
+
+/* Form styles */
+.form-content{
+    @apply flex flex-col gap-4 my-4;
+}
+
+/* Cambios para vue prime.. */
+:root {
+    --text-color: #0D0D0D; /* Color del texto principal */
+    --p-content-background: theme('colors.primary.3')!important;
+    --p-datatable-header-background: theme('colors.primary.6')!important; /* Fondo header tabla */
+    --p-datatable-row-striped-background: theme('colors.primary.4')!important; /* Fondo filas alternadas */
+    --p-inputtext-background: theme('colors.primary.2')!important; /* Fondo input text */
+    --p-textarea-background: theme('colors.primary.2')!important; /* Borde inferior header tabla */
+    --p-datatable-body-cell-border-color: theme('colors.primary.6')!important; /* Borde filas  */
+    --p-inputnumber-button-background: theme('colors.primary.2')!important; /* Fondo botones input number */
+  }
+  .p-datatable {
+    background-color: black;
+}
+.p-datatable-thead span {
+    @apply text-black-custom;
+}
+.p-datatable-header-cell{
+    border-color: theme('colors.primary.6')!important;
+}
+/* botones */
+.button{
+    @apply px-4 py-2 rounded-lg cursor-pointer;
+    transition: filter 0.3s;
+}
+.button:hover{
+    filter: brightness(85%);
+}
+
+
+/* 1: '#eefcf9',
+2: '#c5f7ed',
+3: '#9df1e0',
+4: '#75ebd3',
+5: '#4de5c6',
+6: '#2be0bb', */
