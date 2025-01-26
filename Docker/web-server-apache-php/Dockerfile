@@ -36,7 +36,7 @@ COPY ./Docker/web-server-apache-php/script-permissions.sh /usr/local/bin/script-
 RUN chmod +x /usr/local/bin/script-permissions.sh
 
 # Cambiar el entrypoint para ejecutar el script
-ENTRYPOINT ["/usr/local/bin/script-permissions.sh"]
+# ENTRYPOINT ["/usr/local/bin/script-permissions.sh"]
 
 # Exponer el puerto 80
 EXPOSE 80
