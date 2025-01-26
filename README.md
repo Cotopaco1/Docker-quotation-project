@@ -1,7 +1,9 @@
 ## Contexto - Context
 Este proyecto es una conversion de otro proyecto a un entorno de desarrollo con docker , evitando los problemas con la instalación de dependencias en otras maquinas, tambien con el fin de practicar mis habilidades sobre Docker y docker-compose.
 Si desea contexto sobre el el código del proyecto(licitacionesApp), diríjase a este archivo [README.md](/licitacionesApp/README.md)
+
 ---
+
 This project is a conversion of another project to a development environment with Docker, avoiding issues with dependency installation on other machines, and also to practice my skills with Docker and docker-compose.
 If you want context about the project code (licitacionesApp), refer to this file [README.md](/licitacionesApp/README.md).
 
